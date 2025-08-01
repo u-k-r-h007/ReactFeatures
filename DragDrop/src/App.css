@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.fileUpload{
+  display: none;
+}
+label{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 30px;
+  background-color: rgb(57, 179, 57);
+  border-radius: 10px;
+}
+label:hover{
+  background-color: rgb(67, 131, 226);
+  transition: all .1s ease-in-out;
+  color: white;
+}
+.thumbnail{
+  width: 80px;
+  border-radius: 10px;
+}
+.preview{
+   border: 3px solid lightgray;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  align-items: center;
+  border-radius: 10px;
+}
+.preview > span{
+ width: 25px;
+ height: 25px;
+ cursor: pointer;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+ 
+}
+.uploadBox{
+  border: 2px dashed lightgray;
+  padding: 20px;
+  border-radius: 10px;
+}
+.boxColor{
+  border: 1px solid green;
+  background-color: rgb(173, 247, 173);
+  opacity: .5;
+}
