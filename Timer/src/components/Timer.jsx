@@ -19,7 +19,7 @@ function Timer() {
 
 
  const updateTimer=()=>{
-    console.log("inside this")
+   
    let h=Number(isHour)
    let m=Number(isMinutes)
    let s=Number(isSecond)
@@ -31,28 +31,25 @@ if(h ===0 && m===0&& s===0){
     setIsSecond("")
     return;
 }
-   if(s>0){
-    s--
-    }
-    else{
-        if(m>0){
-    m--
-    s=59
+ if (s > 0) {
+  s--;
+} else if (m > 0) {
+  m--;
+  s = 59;
+} else if (h > 0) {
+  h--;
+  m = 59;
+  s = 59;
+}
 
-   }
-   else if(h>0){
-    h--
-    m=59
-    s=59
-   }
-    }
    
    setIsHour(h.toString().padStart(2,0))
    setIsMinutes(m.toString().padStart(2,0))
    setIsSecond(s.toString().padStart(2,0))
  }
   const handleStartPause = () => {
-    if (isStart) {
+    //pause logic do not get confuse why isStart is there
+    if (isStart) {  
       setIsStart(false);
       clearInterval(intervalId);
     } else {

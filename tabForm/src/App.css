@@ -1,0 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  
+  
+}
+.btn{
+  background-color: bisque;
+  color: black;
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
